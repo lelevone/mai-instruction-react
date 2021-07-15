@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState ,useEffect} from "react";
+
+import Header from './components/Header';
+import Nav from "./components/Nav";
+import {BrowserRouter} from "react-router-dom";
+import Main from "./components/Main";
+import Loader from "./components/Loader";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [paths, setPaths] = useState({});
+
+
+  useEffect(() => {
+    fetch("https://lms-mai-instruction-default-rtdb.europe-west1.firebasedatabase.app/paths.json")
+      .then(res => res.json())
+      .then(
+        result => {
+            setPaths(result);
+            setIsLoaded(true);
+        })
+  }, [])
+
+  const [isActiveMenu, setIsActiveMenu] = React.useState(false);
+
+
+    return (
+      <BrowserRouter>
+        <div className={`wrapper ${isActiveMenu ? "lock" : ""}`}>
+          <Header isActiveMenu={isActiveMenu} setIsActiveMenu={setIsActiveMenu}/>
+          <div className="page">
+          {
+            isLoaded ?
+              <div className="container">
+                <div className="page__row">
+                  <Nav paths={paths} isActiveMenu={isActiveMenu} setIsActiveMenu={setIsActiveMenu}/>
+                  <Main paths={paths}/>
+                </div>
+              </div> :
+              <Loader/>
+          }
+          </div>
+        </div>
+      </BrowserRouter>
+    );
 }
 
 export default App;
