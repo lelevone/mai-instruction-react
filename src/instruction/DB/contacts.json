@@ -1,0 +1,12 @@
+{
+  "children": false,
+  "title": "Контакты",
+  "list": [
+    [
+      {"p": "Написать в службу поддержки СЭО МАИ: <a target='_blank' href='mailto:lms@mai.ru'>lms@mai.ru</a>."},
+      {"p": "Получить доступ к услугам УИС МАИ: <a target='_blank' href='https://mai.ru/getpass/'>https://mai.ru/getpass/</a>."},
+      {"p": "Написать онлайн в службу поддержки УИС: <a target='_blank' href='https://cp.mai.ru/online/gethelp'>https://cp.mai.ru/online/gethelp</a>."},
+      {"p": "Дополнительную информацию по подключению можно получить по телефону: <a href='tel:+7(499)158-45-26'>+7(499)158-45-26</a>"}
+    ]
+  ]
+}

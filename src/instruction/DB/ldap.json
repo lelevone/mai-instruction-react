@@ -1,0 +1,29 @@
+{
+  "title": "Инструкция по переходу на единую авторизацию МАИ",
+  "list": [
+    [
+      {"p": "Переход на единую авторизацию МАИ позволит Вам использовать имя пользователя и пароль от единой учётной записи МАИ для авторизации в СЭО <a target='_blank' href='https://lms.mai.ru/'>https://lms.mai.ru/</a>."},
+      {"p": "Авторизуйтесь в СЭО МАИ введя свои логин и пароль на странице авторизации, расположенной по адресу <a target='_blank' href='https://lms.mai.ru/'>https://lms.mai.ru/</a> (рис. 1)."},
+      {"imgNum": {
+        "url": "https://lms.mai.ru/instruction/images/videoincourse/image1.png",
+        "num": 1
+      }},
+      {"p": "Перейдите в свой личный кабинет (рис. 2)."},
+      {"imgNum": {
+        "url": "https://lms.mai.ru/instruction/images/ldap/image1.png",
+        "num": 2
+      }},
+      {"p": "Нажмите на кнопку «Перейти на единую авторизацию МАИ» (Рис. 3)."},
+      {"imgNum": {
+        "url": "https://lms.mai.ru/instruction/images/ldap/image2.png",
+        "num": 3
+      }},
+      {"p": "В появившемся окне нажмите на кнопку «Да» (Рис. 4)."},
+      {"imgNum": {
+        "url": "https://lms.mai.ru/instruction/images/ldap/image3.png",
+        "num": 4
+      }},
+      {"p": "Готово. Теперь Вам необходимо выйти из аккаунта, после чего Вы сможете зайти, используя данные единой учетной записи МАИ."}
+    ]
+  ]
+}

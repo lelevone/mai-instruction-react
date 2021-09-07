@@ -1,0 +1,20 @@
+{
+  "title": "Для регистрации почты в домене mai.education",
+  "list": [
+    [
+      {"p":  "Получите имя пользователя и пароль на <a target='_blank' href='http://mai.ru/getpass/'>http://mai.ru/getpass/</a>."},
+      {"img": "https://lms.mai.ru/instruction/images/education/img1.jpg"},
+      {"p": "Внимание, если логин и пароль были получены ранее, перейдите к пункту 2."}
+    ],
+    [
+      {"p": "Зайдите на веб-версию почты для учащихся: <a target='_blank' href='http://mail.mai.education/'>http://mail.mai.education/</a>."},
+      {"img": "https://lms.mai.ru/instruction/images/education/img2.jpg"}
+    ],
+    [
+      {"p": "Введите имя пользователя и пароль, который вы получили в сервисе <a target='_blank' href='http://mai.ru/getpass'>http://mai.ru/getpass</a>."}
+    ],
+    [
+      {"p": "Почта активирована, вы можете начать ей пользоваться."}
+    ]
+  ]
+}

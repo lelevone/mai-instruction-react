@@ -1,0 +1,119 @@
+//NAV====================================================================================================
+.nav {
+    position: fixed;
+    width: 300px;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    padding-top: 80px;
+    z-index: 8;
+}
+.nav__list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.nav__item {
+    border-bottom: 1px solid #CECECE;
+}
+.nav__link {
+    padding: 10px 0;
+    padding-left: 12px;
+    display: inline-block;
+    color: #000;
+    line-height: 16px;
+    letter-spacing: 0.11em;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    &.selected {
+        border-left: 4px solid #0094D9;
+    }
+}
+.selected {
+        color: #0094D9;
+}
+.spoiler{
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 0;
+}
+.spoiler.open {
+    .spoiler__list{
+        display: block;
+    }
+    i {
+        transform: rotate(180deg);
+        left: -1px;
+    }
+}
+.spoiler__header {
+    position: relative;
+    line-height: 16px;
+    letter-spacing: 0.11em;
+    font-weight: 500;
+    padding-left: 12px;
+    i{
+        position: absolute;
+        left: 0;
+        font-size: 10px;
+        top: 3px;
+    }
+}
+.spoiler__list {
+    display: none;
+    padding-left: 10px;
+    padding-top: 3px;
+    font-size: 13px;
+}
+.spoiler__item {
+    font-weight: lighter;
+    border-bottom: 1px solid #CECECE;
+    &:last-child{
+        border-bottom: 0;
+    }
+}
+.spoiler__link {
+    position: relative;
+    padding-left: 10px;
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    &.selected{
+        color: #0094D9;
+        border-left: 4px solid #0094D9;
+        right: 4px;
+    }
+}
+
+@media (max-width: $md2+px) {
+    .nav{
+        font-size: 16px;
+        left: 100%;
+        width: 100%;
+        background-color: #fff;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        &.active{
+            display: block;
+            left: 0;
+        }
+    }
+}
+@media (max-width: $md4+px) {
+    .nav{
+        font-size: 12px;
+        width: 100%;
+    }
+    .nav__list{
+        padding-top: 0;
+    }
+}
+//NAV====================================================================================================
