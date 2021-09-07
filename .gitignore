@@ -21,4 +21,7 @@ src/utils/.env.local
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+firebase.json
+yarn.lock
+.firebaserc
 
